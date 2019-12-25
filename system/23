@@ -15,6 +15,5 @@ control center->users and groups->add user
 logout and relogin with new credentials
 
 SSH session:
-sudo adduser <new_user_name>
-sudo passwd <new_user_name>
+sudo adduser <new_user_name> -p <password>
 logout and relogin with new credentials

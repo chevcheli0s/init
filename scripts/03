@@ -3,6 +3,11 @@
 # This script will install webmin on Debian
 # Please run it as root - 'sudo bash 03'
 
+if [ "$EUID" -ne 0 ]
+  then echo "Please run me as root - 'sudo bash 03'"
+  exit
+fi
+
 apt-get install ca-certificates -y
 
 wget http://www.webmin.com/download/deb/webmin-current.deb
